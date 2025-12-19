@@ -85,7 +85,7 @@ python src/anatomixknn_brats.py \
   --anomaly_labels 1 4 \
 ```
 
-### 5) f-AnoGAN (GAN)
+### 5) f-AnoGAN
 
 Script: `src/gan_brats.py`
 
