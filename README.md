@@ -1,6 +1,6 @@
 # BraTS – Unsupervised Anomaly Detection (3D)
 
-Dieses Repository enthält mehrere Pipelines für unüberwachtes Anomalie-Detektion auf dem BraTS-Datensatz (Hirntumore) auf Patch-Basis in 3D. Implementiert sind u. a. Autoencoder (AE), VQ-VAE, f-AnoGAN (GAN), Diffusion (DDPM) sowie feature-basierte Verfahren (Anatomix+KNN, VQ-VAE-Encoder+KNN).
+Dieses Repository enthält mehrere Pipelines für unüberwachtes Anomalie-Detektion auf dem BraTS-Datensatz (Hirntumore) auf Patch-Basis in 3D. Implementiert sind ein CAE, VQ-VAE und ein f-AnoGAN sowie die feature-basierte Verfahren Anatomix+KNN, VQ-VAE-Encoder+KNN.
 
 ## Installation
 
@@ -34,7 +34,7 @@ Standardmäßig wird der BraTS-Datensatz relativ zum Projekt-Root erwartet:
   └─ ...
 ```
 
-### 1) Autoencoder (AE)
+### 1) CAE
 
 Script: `src/ae_brats.py`
 
@@ -58,8 +58,6 @@ python src/vqvae_brats.py \
   --codebook_size 512 \
   --anomaly_labels 1 4 \
 ```
-
-Ergebnisse u. a.: `best_vqvae_3d.pth`, `evaluation_results.txt`, Trainingskurven, PR-/ROC-Kurven etc.
 
 ### 3) VQ-VAE Encoder + KNN
 
