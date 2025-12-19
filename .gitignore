@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+*.pth
+*.pt
+*.pth.tar
+*.pth.tar.gz
+datasets/
+BraTS*
+anatomix/
+anatomix_ae_results/
+env_packages/
+.venv/
+.DS_Store
+results/
